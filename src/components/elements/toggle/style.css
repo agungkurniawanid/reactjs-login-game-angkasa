@@ -1,0 +1,74 @@
+.ThemeLabel>.label {
+    width: 100px;
+    height: 35px;
+    background-color: #e4e4e4;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.Theme>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.label {
+    background: url("https://i.ibb.co/jZF3FBF/night.jpg");
+    background-size: cover;
+}
+.Theme {
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.Theme svg {
+    width: 35px;
+    display: flex;
+    background-color: #ededed;
+    border-radius: 35px;
+    position: absolute;
+}
+.Theme svg:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.Theme svg:nth-child(1).checked {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    transform: translateX(186%) rotate(125deg);
+}
+
+.Theme svg:nth-child(2).checked {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    transform: translateX(186%) rotate(125deg);
+}
+
+.Theme svg:nth-child(1).false {
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    transform: translateX(0%) rotate(-125deg);
+}
+
+.Theme svg:nth-child(2).false {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+    transform: translateX(0%) rotate(-125deg);
+}
+.dark .label {
+    transition: all .3s ease-in-out;
+    background: url("https://i.ibb.co/HxwrSvb/1700.jpg");
+    background-size: cover;
+}
+.dark .Container{
+    background: url("https://i.ibb.co/jZF3FBF/night.jpg");
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}

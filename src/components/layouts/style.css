@@ -1,0 +1,42 @@
+.SubContainer {
+    backdrop-filter: blur(10px); /* Sesuaikan nilai blur sesuai keinginan */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 2rem 2rem;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Ubah nilai opacity sesuai keinginan */
+}
+@media (max-width: 600px){
+    .SubContainer {
+        width: 200px;
+    }
+    .SubContainer > h1 {
+        font-size: 1.5rem;
+    }
+    .p,.y,.i {
+        font-size: 12px;  
+    }
+}
+.SubContainer > h1 {
+    text-align: center;
+    color: #313866;
+}
+.SubContainer > .p {
+    text-align: center;
+    color: #313866;
+    margin-bottom: 1rem;
+}
+.i {
+    margin-top: 10px;
+    text-align: center;
+    color: #313866;
+}
+.y > a {
+    text-transform: capitalize;
+    color: #068FFF;
+    font-weight: bold;
+}
+.y {
+    margin-top: 1rem;
+    text-align: center;
+}
